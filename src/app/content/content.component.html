@@ -1,0 +1,75 @@
+<div class="background">
+  <div class="w-7/12 m-auto">
+    <div class="grid grid-cols-2 h-screen">
+      <!--! LEFT SIDE CONTENT -->
+      <div class="background h-full pt-24">
+        <div *ngFor="let key of profile" class="mb-6">
+          <h2
+            class="text-[color:var(--secondary-text-color)] text-5xl font-bold mb-4"
+          >
+            {{ key.name }}
+          </h2>
+
+          <div class="flex items-center space-x-2">
+            <p class="text-[color:var(--secondary-text-color)] text-2xl">
+              {{ key.job }}
+            </p>
+
+            <!-- GIF HIDE -->
+            <!-- <div class="gif-container">
+                <img
+                  src="../../assets/images/hide-static.png"
+                  alt="Static Image"
+                  class="static-image w-12 h-auto"
+                />
+                <img
+                  src="https://media.giphy.com/media/2zotXB1xGbTB28cKAD/giphy.gif"
+                  alt="GIF"
+                  class="gif-image w-12 h-auto"
+                />
+              </div> -->
+
+            <!-- GIF PAW -->
+            <div class="gif-container">
+              <img
+                src="../../assets/static-paw.png"
+                alt="Static Image"
+                class="static-image w-12 h-auto"
+              />
+              <img
+                src="https://media.giphy.com/media/NQDcH2ZZaPV8QBDYK3/giphy.gif"
+                alt="GIF"
+                class="gif-image w-12 h-auto"
+              />
+            </div>
+          </div>
+          <p class="pt-4 w-9/12">
+            <i>{{ key.about }}</i>
+          </p>
+        </div>
+
+        <ul class="pt-6">
+          <li *ngFor="let nav of navs" class="pt-3">
+            <a href="{{ nav.path }}" class="nav-link">{{ nav.name }}</a>
+          </li>
+        </ul>
+      </div>
+
+      <!--! RIGHT SIDE CONTENT -->
+      <div class="overflow-y-auto p-6">
+        <section id="experience" class="pt-20 h-screen justify-center">
+          <app-experience></app-experience>
+        </section>
+        <section id="biodata" class="pt-20 h-screen justify-center">
+          <app-biodata></app-biodata>
+        </section>
+        <section id="projects" class="pt-20 h-screen justify-center">
+          <app-projects></app-projects>
+        </section>
+        <section id="contact" class="pt-20 h-screen justify-center">
+          <app-contact></app-contact>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>

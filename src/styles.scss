@@ -1,1 +1,85 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+//* global colors
+:root {
+  --bg-color: #0f172a;
+  --primary-text-color: #94a3b8;
+  --secondary-text-color: #e2e8f0;
+  --link-text-color: #55d5c5;
+}
+
+//* main
+.background {
+  background-color: var(--bg-color);
+}
+
+body {
+  color: var(--primary-text-color);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+//* hide scrollbar
+/* Hide scrollbars in modern browsers */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbars in Firefox */
+html {
+  scrollbar-width: none;
+}
+
+//* cursor follow
+:host {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.flashlight {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 62.5rem; /* Adjust size as needed */
+  height: 62.5rem; /* Adjust size as needed */
+  background: radial-gradient(
+    circle,
+    rgba(70, 70, 70, 0.1) 20%,
+    rgba(89, 90, 90, 0) 60%
+  );
+  pointer-events: none;
+  mix-blend-mode: screen;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10000; /* Ensure it stays above other elements */
+  transition: width 0.2s ease, height 0.2s ease, opacity 0.2s ease;
+}
+
+//GIF
+.gif-container {
+  position: relative;
+  display: inline-block;
+}
+
+.static-image {
+  display: block;
+}
+
+.gif-image {
+  display: none;
+}
+
+.gif-container:hover .static-image {
+  display: none;
+}
+
+.gif-container:hover .gif-image {
+  display: block;
+}

@@ -1,13 +1,20 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'angular-port';
+  title = 'Mitchele Centeno';
+
+  @HostListener('window:mousemove', ['$event'])
+  onMouseMove(event: MouseEvent): void {
+    const flashlight = document.querySelector('.flashlight') as HTMLElement;
+    if (flashlight) {
+      flashlight.style.transform = `translate(${
+        event.clientX - flashlight.offsetWidth / 2
+      }px, ${event.clientY - flashlight.offsetHeight / 2}px)`;
+    }
+  }
 }
