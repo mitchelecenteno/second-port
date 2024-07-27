@@ -5,4 +5,8 @@ import { Component } from '@angular/core';
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
 })
-export class ContactComponent {}
+export class ContactComponent {
+  sendMessage() {
+    console.log('test');
+  }
+}

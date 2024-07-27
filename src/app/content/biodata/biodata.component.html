@@ -1,5 +1,39 @@
-<h1 class="text-3xl text-[color:var(--secondary-text-color)]">BIODATA</h1>
-<p class="pt-4">
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
-  perspiciatis.
-</p>
+<h2 class="text-[color:var(--secondary-text-color)] font-semibold pb-2">
+  SKILLS
+</h2>
+
+<div class="flex justify-center items-center">
+  <div class="grid grid-cols-12">
+    <!-- 1 -->
+    <div class="col-span-6">
+      <div class="flex flex-col space-y-2">
+        <ng-container *ngFor="let skill of skillsLeft">
+          <div class="flex items-center">
+            <img
+              src="{{ skill.imgSrc }}"
+              alt="{{ skill.altText }}"
+              class="w-7 ml-1 pr-2"
+            />
+            <p>{{ skill.name }}</p>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="col-span-5">
+      <div class="flex flex-col space-y-2">
+        <ng-container *ngFor="let skill of skillsRight">
+          <div class="flex items-center">
+            <img
+              src="{{ skill.imgSrc }}"
+              alt="{{ skill.altText }}"
+              class="w-7 ml-1 pr-2"
+            />
+            <p>{{ skill.name }}</p>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</div>

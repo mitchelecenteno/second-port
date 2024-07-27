@@ -9,7 +9,6 @@
           >
             {{ key.name }}
           </h2>
-
           <div class="flex items-center space-x-2">
             <p class="text-[color:var(--secondary-text-color)] text-2xl">
               {{ key.job }}
@@ -34,12 +33,12 @@
               <img
                 src="../../assets/static-paw.png"
                 alt="Static Image"
-                class="static-image w-12 h-auto"
+                class="static-image w-10 h-auto"
               />
               <img
                 src="https://media.giphy.com/media/NQDcH2ZZaPV8QBDYK3/giphy.gif"
                 alt="GIF"
-                class="gif-image w-12 h-auto"
+                class="gif-image w-10 h-auto"
               />
             </div>
           </div>
@@ -57,16 +56,19 @@
 
       <!--! RIGHT SIDE CONTENT -->
       <div class="overflow-y-auto p-6">
-        <section id="experience" class="pt-20 h-screen justify-center">
+        <section id="about" class="pt-24 justify-center">
+          <app-about></app-about>
+        </section>
+        <section id="experience" class="pt-24 justify-center">
           <app-experience></app-experience>
         </section>
-        <section id="biodata" class="pt-20 h-screen justify-center">
+        <section id="biodata" class="pt-24 justify-center">
           <app-biodata></app-biodata>
         </section>
-        <section id="projects" class="pt-20 h-screen justify-center">
+        <section id="projects" class="pt-20 justify-center">
           <app-projects></app-projects>
         </section>
-        <section id="contact" class="pt-20 h-screen justify-center">
+        <section id="contact" class="pt-20 justify-center">
           <app-contact></app-contact>
         </section>
       </div>

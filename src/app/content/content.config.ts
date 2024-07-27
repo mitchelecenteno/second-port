@@ -9,11 +9,15 @@ export const DEV_PROFILE = [
 
 export const NAVIGATIONS = [
   {
+    name: 'ABOUT',
+    path: '#about',
+  },
+  {
     name: 'EXPERIENCE',
     path: '#experience',
   },
   {
-    name: 'BIODATA',
+    name: 'SKILLS', //biodata rename to skills
     path: '#biodata',
   },
   {

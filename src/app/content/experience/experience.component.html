@@ -1,5 +1,61 @@
-<h1 class="text-3xl text-[color:var(--secondary-text-color)]">EXPERIENCE</h1>
-<p class="pt-4">
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis molestias a
-  soluta iusto, rerum tempore maiores. Quaerat officiis repudiandae nobis.
-</p>
+<div class="w-full">
+  <h2 class="text-[color:var(--secondary-text-color)] font-semibold pb-3">
+    EXPERIENCE
+  </h2>
+  <!-- left -->
+  <div class="grid grid-cols-12">
+    <ng-container *ngFor="let exp of experiences">
+      <p
+        class="col-span-3 text-xs font-bold pt-1 text-[color:var(--fade-text-color)]"
+      >
+        {{ exp.year }}
+      </p>
+
+      <!-- right -->
+      <!-- job, loc & desc -->
+      <div class="col-span-9">
+        <div class="pb-4">
+          <p class="font-bold text-[color:var(--secondary-text-color)]">
+            {{ exp.job }}
+          </p>
+          <p class="text-sm font-semibold text-[color:var(--fade-text-color)]">
+            {{ exp.location }}
+          </p>
+          <p class="text-sm pt-2">
+            {{ exp.desciption }}
+          </p>
+        </div>
+
+        <!-- skills -->
+        <div class="pb-12">
+          <ul class="list-none flex gap-2 flex-wrap">
+            <li *ngFor="let skill of exp.skills">
+              <button
+                class="cursor-text text-xs font-medium bg-teal-400/10 text-[color:var(--skills-text-color)] px-3 py-1 rounded-full opacity-90"
+                disabled
+              >
+                {{ skill }}
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+
+  <!-- resume -->
+  <a
+    href="../../../assets/mitchele-centeno-cv.pdf"
+    target="_blank"
+    class="flex items-center text-[color:var(--secondary-text-color)] group hover:text-[color:var(--link-text-color)] cursor-pointer"
+  >
+    <p class="flex items-center m-0 font-semibold">
+      View Full Résumé
+      <span
+        class="material-symbols-outlined text-sm pl-1 transition-transform translate-custom-hover"
+      >
+        arrow_outward
+      </span>
+    </p>
+  </a>
+</div>

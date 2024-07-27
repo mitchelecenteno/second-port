@@ -1,4 +1,48 @@
-<h1 class="text-3xl text-[color:var(--secondary-text-color)]">PROJECTS</h1>
-<p class="pt-4">
-  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, nisi!
-</p>
+<h2 class="text-[color:var(--secondary-text-color)] font-semibold pb-3">
+  PROJECTS
+</h2>
+
+<div class="flex flex-col">
+  <ng-container *ngFor="let proj of projects">
+    <div class="grid grid-cols-12 pt-8">
+      <div class="col-span-4">
+        <!-- thumbnail -->
+        <a
+          href="{{ proj.path }}"
+          target="_blank"
+          class="flex items-center text-[color:var(--secondary-text-color)] group hover:text-[color:var(--link-text-color)] cursor-pointer"
+        >
+          <img
+            src="../../../assets/thumbnails/{{ proj.imgSrc }}"
+            alt="{{ proj.imgAlt }}"
+            class="rounded-sm w-11/12 h-auto mt-1 border-2 border-[var(--border-project-color)] hover:border-[var(--primary-text-color)]"
+          />
+        </a>
+      </div>
+
+      <!-- description -->
+      <div class="col-span-8">
+        <div class="ml-4">
+          <a
+            href="{{ proj.path }}"
+            target="_blank"
+            class="flex items-center text-[color:var(--secondary-text-color)] group hover:text-[color:var(--link-text-color)] cursor-pointer"
+          >
+            <p class="flex items-center m-0 font-semibold">
+              {{ proj.name }}
+              <span
+                class="material-symbols-outlined text-sm pl-1 transition-transform translate-custom-hover"
+              >
+                arrow_outward
+              </span>
+            </p>
+          </a>
+
+          <p class="text-[color:var(--primary-text-color)]">
+            {{ proj.desciption }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>

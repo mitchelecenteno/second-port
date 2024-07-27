@@ -1,4 +1,36 @@
-<h1 class="text-3xl text-[color:var(--secondary-text-color)]">CONTACT</h1>
-<p class="pt-4">
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, minus.
-</p>
+<h2
+  class="text-[color:var(--secondary-text-color)] font-semibold pb-3 col-span-2"
+>
+  Contact
+</h2>
+
+<div class="flex flex-col pb-12">
+  <div class="flex items-center">
+    <h1
+      class="text-[color:var(--secondary-text-color)] font-medium text-3xl mr-[-5px]"
+    >
+      Get In Touch
+    </h1>
+    <img
+      src="../../../assets/reverse-cat-75.gif"
+      alt="GIF"
+      class="w-12 h-auto"
+    />
+  </div>
+
+  <p class="text-sm pt-1 mt-2">
+    <i
+      >"Right now I'm open to new opportunities and experiences. <br />If you
+      have any queries, feel free to contact me anytime"</i
+    >
+  </p>
+  <div class="mt-4">
+    <button
+      mat-raised-button
+      class="bg-[color:var(--border-project-color)] text-[color:var(--secondary-text-color)] px-3 py-1 text-sm rounded-xl hover:bg-[color:var(--fade-text-color)] w-4/12"
+      (click)="sendMessage()"
+    >
+      Send Message
+    </button>
+  </div>
+</div>

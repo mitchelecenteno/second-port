@@ -8,6 +8,10 @@
   --primary-text-color: #94a3b8;
   --secondary-text-color: #e2e8f0;
   --link-text-color: #55d5c5;
+  --fade-text-color: #64748b;
+  --skills-text-color: #5eead4;
+  --skills-button-color: #122b39;
+  --border-project-color: #242d3e;
 }
 
 //* main
@@ -82,4 +86,26 @@ html {
 
 .gif-container:hover .gif-image {
   display: block;
+}
+
+// link: arrow animation
+.transition-transform {
+  transition: transform 0.2s ease; /* Adjust timing and easing as needed */
+}
+
+/* Apply transform on hover of parent group */
+.group:hover .translate-custom-hover {
+  transform: translate(2px, -2px);
+}
+
+//button
+.custom-btn {
+  font-size: 16px;
+  padding: 8px 16px;
+  background-color: #2ecc71;
+  color: #fff;
+
+  &:hover {
+    background-color: #27ae60;
+  }
 }
