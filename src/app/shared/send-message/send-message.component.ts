@@ -5,8 +5,6 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './send-message.component.html',
-  styleUrl: './send-message.component.scss'
+  styleUrls: ['./send-message.component.scss'],
 })
-export class SendMessageComponent {
-
-}
+export class SendMessageComponent {}

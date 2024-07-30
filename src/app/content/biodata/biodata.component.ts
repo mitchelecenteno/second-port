@@ -4,7 +4,7 @@ import { BIODATA_SKILLS_RIGHT, BIODATA_SKILLS_LEFT } from './biodata.config';
 @Component({
   selector: 'app-biodata',
   templateUrl: './biodata.component.html',
-  styleUrl: './biodata.component.scss',
+  styleUrls: ['./biodata.component.scss'],
 })
 export class BiodataComponent {
   skillsRight = BIODATA_SKILLS_RIGHT;
