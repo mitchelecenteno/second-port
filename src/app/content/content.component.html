@@ -1,15 +1,17 @@
-<div class="w-8/12 m-auto h-screen lg:w-7/12">
-  <div class="h-full lg:grid lg:grid-cols-2">
+<div class="m-auto h-screen laptop:w-11/12">
+  <div class="h-full laptop:grid laptop:grid-cols-2">
     <!--! LEFT SIDE CONTENT -->
-    <div class="h-full pt-16 overflow-hidden">
+    <div class="h-full pt-24 overflow-hidden">
       <div *ngFor="let key of profile" class="mb-6">
         <p
-          class="text-[color:var(--secondary-text-color)] text-4xl font-bold !mb-1"
+          class="text-[color:var(--secondary-text-color)] text-5xl font-bold !mb-1"
         >
           {{ key.name }}
         </p>
         <div class="flex items-center space-x-2">
-          <p class="text-[color:var(--secondary-text-color)] text-2xl">
+          <p
+            class="text-[color:var(--secondary-text-color)] text-2xl font-normal"
+          >
             {{ key.job }}
           </p>
 
@@ -27,7 +29,7 @@
             />
           </div>
         </div>
-        <p class="w-9/12 !-mt-1">
+        <p class="w-9/12 font-normal text-base">
           <i>{{ key.about }}</i>
         </p>
       </div>

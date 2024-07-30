@@ -15,12 +15,14 @@
 }
 
 //* main
-.background {
-  background-color: var(--bg-color);
-}
+// .background {
+//   background-color: var(--bg-color);
+// }
 
 body {
   color: var(--primary-text-color);
+  background-color: var(--bg-color);
+  font-family: "Inter", sans-serif !important;
 }
 
 html {
