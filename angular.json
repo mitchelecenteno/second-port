@@ -32,7 +32,10 @@
                 "output": "/public/"
               }
             ],
-            "styles": ["src/styles.scss"],
+            "styles": [
+              "@angular/material/prebuilt-themes/azure-blue.css",
+              "src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -95,11 +98,17 @@
                 "output": "/public/"
               }
             ],
-            "styles": ["src/styles.scss"],
+            "styles": [
+              "@angular/material/prebuilt-themes/azure-blue.css",
+              "src/styles.scss"
+            ],
             "scripts": []
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "7ec94fe7-7dce-43b2-80b3-d0f9573f5bd4"
   }
 }
