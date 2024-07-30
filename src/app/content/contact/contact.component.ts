@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { SendMessageComponent } from '../../shared/send-message/send-message.component';
 
 @Component({
   selector: 'app-contact',
@@ -6,7 +8,13 @@ import { Component } from '@angular/core';
   styleUrl: './contact.component.scss',
 })
 export class ContactComponent {
+  constructor(public dialog: MatDialog) {}
+
   sendMessage() {
-    console.log('test');
+    // this.dialog.open(SendMessageComponent, {
+    //   panelClass: 'background',
+    //   width: '90vw',
+    //   height: '40vw',
+    // });
   }
 }
