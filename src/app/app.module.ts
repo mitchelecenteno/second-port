@@ -12,6 +12,8 @@ import { AboutComponent } from './content/about/about.component';
 import { SendMessageComponent } from './shared/send-message/send-message.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormField } from '@angular/material/form-field';
+import { SocialIconsComponent } from './shared/social-icons/social-icons.component';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [
@@ -23,8 +25,15 @@ import { MatFormField } from '@angular/material/form-field';
     ContactComponent,
     AboutComponent,
     SendMessageComponent,
+    SocialIconsComponent,
   ],
-  imports: [BrowserModule, CommonModule, MatDialogModule, MatFormField],
+  imports: [
+    BrowserModule,
+    CommonModule,
+    MatDialogModule,
+    MatFormField,
+    MatTooltipModule,
+  ],
   // providers: [
   //   provideAnimationsAsync(), // Add this to provide animations asynchronously
   // ],
