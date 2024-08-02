@@ -21,7 +21,7 @@ export const SOCIAL_MEDIA = [
   },
   {
     path: 'mailto:mitchele.centeno@gmail.com',
-    toolTip: 'GitHub',
+    toolTip: 'mitchele.centeno@gmail.com',
     icon: 'fa-solid fa-envelope',
   },
 ];
