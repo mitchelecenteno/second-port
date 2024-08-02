@@ -14,6 +14,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormField } from '@angular/material/form-field';
 import { SocialIconsComponent } from './shared/social-icons/social-icons.component';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     MatDialogModule,
     MatFormField,
     MatTooltipModule,
+    MatButtonModule,
   ],
   // providers: [
   //   provideAnimationsAsync(), // Add this to provide animations asynchronously

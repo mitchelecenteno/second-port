@@ -1,5 +1,29 @@
 <div>
-  <section>
-    <h2 class="text-2xl">Contact Me</h2>
-  </section>
+  <mat-dialog-content>
+    <div
+      class="flex justify-end text-xs text-[color:var(--primary-text-color)]"
+    >
+      <i class="fa-solid fa-x" (click)="onCancel()"> </i>
+    </div>
+    <section>
+      <p>CONTACT INFORMATION</p>
+      <p>ADDRESS:</p>
+      <p>CVS Homes 1, Barangay San Isidro, Cainta Rizal Philippines.</p>
+      <p>Mobile:</p>
+      <p>(+63) 921 425 3672</p>
+      <p>(+63) 976 106 5776</p>
+      <p>Email:</p>
+      <p>
+        mitchele.centeno
+        <button
+          mat-dialog-container
+          type="submit"
+          color="primary"
+          class="bg-[color:var(--border-project-color)] text-[color:var(--secondary-text-color)] py-1 px-4 text-sm rounded-3xl hover:bg-[color:var(--fade-text-color)]"
+        >
+          <a href="mailto:mitchele.centeno@gmail.com"> Send Message </a>
+        </button>
+      </p>
+    </section>
+  </mat-dialog-content>
 </div>

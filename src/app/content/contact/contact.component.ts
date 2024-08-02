@@ -11,10 +11,8 @@ export class ContactComponent {
   constructor(public dialog: MatDialog) {}
 
   sendMessage() {
-    // this.dialog.open(SendMessageComponent, {
-    //   panelClass: 'background',
-    //   width: '90vw',
-    //   height: '40vw',
-    // });
+    this.dialog.open(SendMessageComponent, {
+      panelClass: 'background',
+    });
   }
 }

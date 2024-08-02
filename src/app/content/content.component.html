@@ -5,7 +5,7 @@
     class="lg:h-full xl:h-full lg:grid lg:grid-cols-2 xl:grid xl:grid-cols-2"
   >
     <!--! LEFT SIDE CONTENT -->
-    <div class="lg:pt-24 pl-6 overflow-hidden lg:pl-0 xl:pl-0">
+    <div class="lg:pt-24 overflow-hidden lg:pl-0 xl:pl-0">
       <div *ngFor="let key of profile" class="mb-6">
         <p
           class="text-[color:var(--secondary-text-color)] text-5xl font-bold !mb-1"
@@ -37,13 +37,15 @@
           <i>{{ key.about }}</i>
         </p>
       </div>
-      <ul class="pt-6 text-sm hidden lg:block xl:block">
-        <li *ngFor="let nav of navs" class="pt-2">
-          <a href="{{ nav.path }}" class="nav-link">{{ nav.name }}</a>
+      <ul class="2xl:pt-6 text-sm hidden lg:block xl:block">
+        <li *ngFor="let nav of navs" class="2xl:pt-2">
+          <a href="{{ nav.path }}" class="nav-link">
+            {{ nav.name }}
+          </a>
         </li>
       </ul>
 
-      <div class="pb-16 lg:pt-72">
+      <div class="pb-16 pt-10 2xl:pt-72">
         <app-social-icons></app-social-icons>
       </div>
     </div>
