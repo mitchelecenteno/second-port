@@ -1,45 +1,18 @@
 <div class="flex flex-row gap-8">
-  <a
-    href="https://github.com/mitchelecenteno"
-    target="_blank"
-    rel="noopener noreferrer"
-    matTooltipPosition="left"
-    matTooltip="GitHub"
-  >
-    <i class="fa-brands fa-github text-2xl"></i>
-  </a>
-  <a
-    href="https://www.linkedin.com/in/mitchele-centeno/"
-    target="_blank"
-    rel="noopener noreferrer"
-    matTooltipPosition="left"
-    matTooltip="LinkedIn"
-  >
-    <i class="fab fa-linkedin text-2xl"></i>
-  </a>
-  <a
-    href="https://codepen.io/mitchelecenteno"
-    target="_blank"
-    rel="noopener noreferrer"
-    matTooltipPosition="left"
-    matTooltip="CodePen"
-  >
-    <i class="fa-brands fa-codepen text-2xl"></i>
-  </a>
-  <a
-    href="https://www.instagram.com/mitchelecenteno/"
-    target="_blank"
-    rel="noopener noreferrer"
-    matTooltipPosition="left"
-    matTooltip="Instagram"
-  >
-    <i class="fa-brands fa-instagram text-2xl"></i>
-  </a>
-  <a
-    href="mailto:mitchele.centeno@gmail.com"
-    matTooltipPosition="left"
-    matTooltip="mitchele.centeno@gmail.com"
-  >
-    <i class="fa-solid fa-envelope text-2xl"></i>
-  </a>
+  <ng-container *ngFor="let social of socialMedia">
+    <a
+      href="{{ social.path }}"
+      target="_blank"
+      rel="noopener noreferrer"
+      matTooltipPosition="above"
+      matTooltip="{{ social.toolTip }}"
+      matTooltipShowDelay="500"
+    >
+      <i
+        class="{{
+          social.icon
+        }} text-2xl hover:text-[color:var(--secondary-text-color)]"
+      ></i>
+    </a>
+  </ng-container>
 </div>
