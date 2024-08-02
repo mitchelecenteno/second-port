@@ -12,7 +12,7 @@ export class ContactComponent {
 
   sendMessage() {
     this.dialog.open(SendMessageComponent, {
-      panelClass: 'background',
+      disableClose: true,
     });
   }
 }

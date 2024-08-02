@@ -5,6 +5,8 @@ module.exports = {
     extend: {},
     //* SCREENS #1
     screens: {
+      mobile: "0px",
+
       sm: "640px",
       // => @media (min-width: 640px) { ... }
 
@@ -17,7 +19,7 @@ module.exports = {
       xl: "1280px",
       // => @media (min-width: 1280px) { ... }
 
-      "2xl": "1536px",
+      xxl: "1536px",
       // => @media (min-width: 1536px) { ... }
     },
 

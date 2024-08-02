@@ -1,29 +1,36 @@
-<div>
-  <mat-dialog-content>
-    <div
-      class="flex justify-end text-xs text-[color:var(--primary-text-color)]"
+<mat-dialog-content>
+  <div class="flex justify-end text-sm text-[color:var(--primary-text-color)]">
+    <i
+      class="fa-solid fa-x text-[color:var(--primary-text-color)] hover:text-[color:var(--bg-color)]"
+      (click)="onCancel()"
     >
-      <i class="fa-solid fa-x" (click)="onCancel()"> </i>
-    </div>
-    <section>
-      <p>CONTACT INFORMATION</p>
-      <p>ADDRESS:</p>
-      <p>CVS Homes 1, Barangay San Isidro, Cainta Rizal Philippines.</p>
-      <p>Mobile:</p>
-      <p>(+63) 921 425 3672</p>
-      <p>(+63) 976 106 5776</p>
-      <p>Email:</p>
-      <p>
-        mitchele.centeno
-        <button
-          mat-dialog-container
-          type="submit"
-          color="primary"
-          class="bg-[color:var(--border-project-color)] text-[color:var(--secondary-text-color)] py-1 px-4 text-sm rounded-3xl hover:bg-[color:var(--fade-text-color)]"
-        >
-          <a href="mailto:mitchele.centeno@gmail.com"> Send Message </a>
-        </button>
-      </p>
-    </section>
-  </mat-dialog-content>
-</div>
+    </i>
+  </div>
+  <section>
+    <ng-container *ngFor="let info of messageInfo">
+      <p class="text-2xl font-medium text-center">CONTACT INFORMATION</p>
+
+      <div class="pt-6">
+        <p class="text-lg font-medium">ADDRESS:</p>
+        <p>{{ info.address }}</p>
+      </div>
+
+      <div class="pt-8">
+        <p class="text-lg font-medium">Mobile:</p>
+        <p>{{ info.mobileOne }}</p>
+        <p>{{ info.mobileTwo }}</p>
+      </div>
+      <div class="pt-8 pb-2">
+        <p class="text-lg font-medium">Email:</p>
+        <p class="text-lg italic">
+          {{ info.email }}
+          <button
+            class="bg-[color:var(--border-project-color)] text-[color:var(--secondary-text-color)] py-1 px-3 text-sm rounded-full hover:bg-[color:var(--fade-text-color)] pt-1 ml-1"
+          >
+            <a href="mailto:mitchele.centeno@gmail.com"> Send Message </a>
+          </button>
+        </p>
+      </div>
+    </ng-container>
+  </section>
+</mat-dialog-content>
