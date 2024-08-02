@@ -11,12 +11,12 @@ export const SOCIAL_MEDIA = [
   },
   {
     path: 'https://codepen.io/mitchelecenteno',
-    toolTip: 'GitHub',
+    toolTip: 'CodePen',
     icon: 'fa-brands fa-codepen',
   },
   {
     path: 'https://www.instagram.com/mitchelecenteno/',
-    toolTip: 'GitHub',
+    toolTip: 'Instagram',
     icon: 'fa-brands fa-instagram',
   },
   {
