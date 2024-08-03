@@ -1,36 +1,48 @@
-<mat-dialog-content>
-  <div class="flex justify-end text-sm text-[color:var(--primary-text-color)]">
+<div class="px-4">
+  <div class="flex justify-end pt-4 pr-3">
     <i
       class="fa-solid fa-x text-[color:var(--primary-text-color)] hover:text-[color:var(--bg-color)]"
       (click)="onCancel()"
+      matTooltip="close"
+      matTooltipPosition="right"
+      matTooltipShowDelay="500"
     >
     </i>
   </div>
-  <section>
-    <ng-container *ngFor="let info of messageInfo">
-      <p class="text-2xl font-medium text-center">CONTACT INFORMATION</p>
+  <mat-dialog-content>
+    <section>
+      <ng-container *ngFor="let info of messageInfo">
+        <p class="text-xl font-medium text-center">CONTACT INFORMATION</p>
 
-      <div class="pt-6">
-        <p class="text-lg font-medium">ADDRESS:</p>
-        <p>{{ info.address }}</p>
-      </div>
+        <div class="pt-5">
+          <p class="text-lg font-medium">ADDRESS:</p>
+          <p>{{ info.address }}</p>
+        </div>
 
-      <div class="pt-8">
-        <p class="text-lg font-medium">Mobile:</p>
-        <p>{{ info.mobileOne }}</p>
-        <p>{{ info.mobileTwo }}</p>
-      </div>
-      <div class="pt-8 pb-2">
-        <p class="text-lg font-medium">Email:</p>
-        <p class="text-lg italic">
-          {{ info.email }}
-          <button
-            class="bg-[color:var(--border-project-color)] text-[color:var(--secondary-text-color)] py-1 px-3 text-sm rounded-full hover:bg-[color:var(--fade-text-color)] pt-1 ml-1"
-          >
-            <a href="mailto:mitchele.centeno@gmail.com"> Send Message </a>
-          </button>
-        </p>
-      </div>
-    </ng-container>
-  </section>
-</mat-dialog-content>
+        <div class="pt-8">
+          <p class="text-lg font-medium">Mobile:</p>
+          <p>{{ info.mobileOne }}</p>
+          <p>{{ info.mobileTwo }}</p>
+        </div>
+        <div class="pt-8 pb-3">
+          <p class="text-lg font-medium">Email:</p>
+          <p class="text-lg italic">
+            {{ info.email }}
+            <button
+              class="bg-[color:var(--border-project-color)] text-[color:var(--secondary-text-color)] py-1 px-3 text-sm rounded-full hover:bg-[color:var(--fade-text-color)] pt-1 ml-1"
+            >
+              <a
+                href="mailto:mitchele.centeno@gmail.com"
+                matTooltip="send email to mitchele.centeno@gmail.com"
+                matTooltipPosition="above"
+                matTooltipShowDelay="500"
+              >
+                Send Message
+              </a>
+            </button>
+          </p>
+        </div>
+      </ng-container>
+    </section>
+  </mat-dialog-content>
+</div>
