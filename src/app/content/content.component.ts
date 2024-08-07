@@ -31,7 +31,7 @@ export class ContentComponent implements OnInit {
           const targetSection = document.getElementById(targetId);
           // console.log(targetSection);
           if (targetSection) {
-            targetSection.scrollIntoView();
+            targetSection.scrollIntoView({ behavior: 'smooth' });
           }
         });
       });
