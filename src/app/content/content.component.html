@@ -8,19 +8,19 @@
     <div class="lg:pt-24 overflow-hidden lg:pl-0 xl:pl-0">
       <div *ngFor="let key of profile" class="mb-6">
         <p
-          class="text-[color:var(--secondary-text-color)] text-5xl font-bold !mb-1"
+          class="text-[color:var(--secondary-text-color)] text-3xl md:text-5xl font-bold !mb-1"
         >
           {{ key.name }}
         </p>
         <div class="flex items-center space-x-2">
           <p
-            class="text-[color:var(--secondary-text-color)] text-2xl font-normal"
+            class="text-[color:var(--secondary-text-color)] text-lg md:text-2xl font-normal"
           >
             {{ key.job }}
           </p>
 
           <!-- GIF PAW -->
-          <div class="gif-container">
+          <div class="gif-container !hidden md:!block">
             <img
               src="../../assets/static-paw.png"
               alt="Static Image"
@@ -33,32 +33,49 @@
             />
           </div>
         </div>
-        <p class="w-9/12 font-normal text-base">
+        <p class="w-9/12 font-normal text-sm md:text-base">
           <i>{{ key.about }}</i>
         </p>
       </div>
-      <ul class="text-sm">
-        <li *ngFor="let nav of navs">
-          <a href="{{ nav.path }}" class="nav-link">
+      <ul class="text-sm hidden lg:block">
+        <!-- <li *ngFor="let nav of navs">
+          <a href="#{{ nav.path }}" class="nav-link">
             {{ nav.name }}
           </a>
+        </li> -->
+        <li>
+          <a href="#about" class="nav-link"> ABOUT </a>
+        </li>
+        <li>
+          <a href="#experience" class="nav-link"> EXPERIENCE </a>
+        </li>
+        <li>
+          <a href="#skills" class="nav-link"> SKILLS </a>
+        </li>
+        <li>
+          <a href="#projects" class="nav-link"> PROJECTS </a>
+        </li>
+        <li>
+          <a href="#contact" class="nav-link"> CONTACT </a>
         </li>
       </ul>
 
-      <div class="">
+      <div
+        class="flex justify-center sm:justify-start sm:pl-6 lg:pt-24 xxl:pt-72"
+      >
         <app-social-icons></app-social-icons>
       </div>
     </div>
 
     <!--! RIGHT SIDE CONTENT -->
-    <div class="overflow-y-auto p-6 h-full">
+    <div id="content" class="overflow-y-auto p-6 h-full">
       <section id="about" class="lg:pt-24 xl:pt-24 justify-center">
         <app-about></app-about>
       </section>
       <section id="experience" class="pt-24 justify-center">
         <app-experience></app-experience>
       </section>
-      <section id="biodata" class="pt-24 justify-center">
+      <section id="skills" class="pt-24 justify-center">
         <app-biodata></app-biodata>
       </section>
       <section id="projects" class="pt-20 justify-center">

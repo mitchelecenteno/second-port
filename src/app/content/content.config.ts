@@ -10,22 +10,22 @@ export const DEV_PROFILE = [
 export const NAVIGATIONS = [
   {
     name: 'ABOUT',
-    path: '#about',
+    path: 'about',
   },
   {
     name: 'EXPERIENCE',
-    path: '#experience',
+    path: 'experience',
   },
   {
     name: 'SKILLS', //biodata rename to skills
-    path: '#biodata',
+    path: 'skills',
   },
   {
     name: 'PROJECTS',
-    path: '#projects',
+    path: 'projects',
   },
   {
     name: 'CONTACT',
-    path: '#contact',
+    path: 'contact',
   },
 ];

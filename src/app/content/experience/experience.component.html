@@ -8,16 +8,16 @@
   <div class="grid grid-cols-12">
     <ng-container *ngFor="let exp of experiences">
       <p
-        class="col-span-3 text-xs font-bold pt-1 text-[color:var(--fade-text-color)]"
+        class="col-span-3 text-xs font-bold pt-1 text-[color:var(--fade-text-color)] pr-1"
       >
-        {{ exp.year }}
+        {{ exp.yearStart }} - {{ exp.yearEnd }}
       </p>
 
       <!-- right -->
       <!-- job, loc & desc -->
       <div class="col-span-9">
         <div class="pb-4">
-          <p class="font-bold text-[color:var(--secondary-text-color)]">
+          <p class="font-bold text-[color:var(--secondary-text-color)] pl-1">
             {{ exp.job }}
           </p>
           <p class="text-sm font-semibold text-[color:var(--fade-text-color)]">
