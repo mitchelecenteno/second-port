@@ -37,15 +37,15 @@
           <i>{{ key.about }}</i>
         </p>
       </div>
-      <ul class="2xl:pt-6 text-sm !lg:block !xl:block !xxl:block">
-        <li *ngFor="let nav of navs" class="2xl:pt-2">
+      <ul class="text-sm">
+        <li *ngFor="let nav of navs">
           <a href="{{ nav.path }}" class="nav-link">
             {{ nav.name }}
           </a>
         </li>
       </ul>
 
-      <div class="pb-16 mobile:pt-10 sm:pt-10 lg:pt-72">
+      <div class="">
         <app-social-icons></app-social-icons>
       </div>
     </div>
