@@ -11,7 +11,7 @@ export const PROJECTS = [
     imgSrc: 'thumbnail-protoapp.png',
     imgAlt: 'thumbnail of ProtoApp project',
     name: 'ProtoApp',
-    path: 'https://example.com',
+    path: 'https://protoapp-mitchelecenteno.netlify.app/',
     role: 'Front-end Developer',
     desciption: `ProtoApp is a portfolio project designed to showcase my front-end development skills. This website highlights my ability to create visually appealing and functional web interfaces, demonstrating my expertise in modern web technologies and design.`,
   },

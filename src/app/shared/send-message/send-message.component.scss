@@ -1,0 +1,8 @@
+/* Link Arrow Animation */
+.transition-transform {
+  transition: transform 0.2s ease; /* Adjust timing and easing as needed */
+}
+
+.group:hover .translate-custom-hover {
+  transform: translate(2px, -2px);
+}
