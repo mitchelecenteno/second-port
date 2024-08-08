@@ -6,8 +6,8 @@
 
 <div class="flex flex-col">
   <ng-container *ngFor="let proj of projects">
-    <div class="grid grid-cols-12 pt-8">
-      <div class="col-span-3 hidden sm:block">
+    <div class="sm:grid sm:grid-cols-12 pt-8">
+      <div class="col-span-3 pb-4 ml-4 sm:pb-0 sm:ml-0">
         <!-- thumbnail -->
         <a
           href="{{ proj.path }}"
@@ -23,7 +23,7 @@
       </div>
 
       <!-- description -->
-      <div class="col-span-12 sm:col-span-9">
+      <div class="sm:col-span-9 pb-4 sm:pb-0">
         <div class="ml-4">
           <a
             href="{{ proj.path }}"
