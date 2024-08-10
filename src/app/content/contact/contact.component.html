@@ -28,10 +28,17 @@
   </p>
   <div class="w-full flex justify-center lg:justify-start">
     <button
+      (click)="sendMessage()"
+      class="cursor-pointer transition-all bg-blue-500 text-white px-5 py-1 rounded-lg border-blue-600 border-b-[4px] hover:border-[color:var(--dark-link-text-color)] hover:bg-[color:var(--link-text-color)] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px]"
+    >
+      Say Hello
+    </button>
+
+    <!-- <button
       class="bg-[color:var(--border-project-color)] text-[color:var(--secondary-text-color)] py-1 px-4 text-base rounded-full hover:bg-[color:var(--fade-text-color)]"
       (click)="sendMessage()"
     >
       <a> Say Hello</a>
-    </button>
+    </button> -->
   </div>
 </div>
