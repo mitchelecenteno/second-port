@@ -8,7 +8,7 @@
   >
   </i>
 </div>
-<div class="w-full h-full px-10 pb-4 text-[color:var(--bg-color)]">
+<div class="px-16 pb-4 text-[color:var(--bg-color)]">
   <section>
     <ng-container *ngFor="let info of messageInfo">
       <p
@@ -31,7 +31,7 @@
         <p>{{ info.mobileOne }}</p>
         <p>{{ info.mobileTwo }}</p>
       </div>
-      <div class="pt-8 pb-6">
+      <div class="pt-8 pb-2">
         <p class="text-base font-medium text-[color:var(--primary-text-color)]">
           Click to email:
         </p>
@@ -44,7 +44,7 @@
             matTooltipShowDelay="500"
             class="flex items-center hover:text-[color:var(--link-text-color)] group"
           >
-            <p>
+            <p class="flex flex-nowrap">
               {{ info.email }}
               <span
                 class="material-symbols-outlined text-sm pl-1 transition-transform translate-custom-hover"
