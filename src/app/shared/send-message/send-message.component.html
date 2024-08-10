@@ -1,15 +1,14 @@
-<div class="px-8 py-4 h-full text-[color:var(--bg-color)]">
-  <div class="flex justify-end pt-4">
-    <i
-      class="fa-solid fa-x text-[color:var(--primary-text-color)] hover:text-[color:var(--bg-color)]"
-      (click)="onCancel()"
-      matTooltip="close"
-      matTooltipPosition="right"
-      matTooltipShowDelay="500"
-    >
-    </i>
-  </div>
-
+<div class="flex justify-end pr-6 pt-5">
+  <i
+    class="fa-solid fa-x text-[color:var(--primary-text-color)] hover:text-[color:var(--bg-color)]"
+    (click)="onCancel()"
+    matTooltip="close"
+    matTooltipPosition="right"
+    matTooltipShowDelay="500"
+  >
+  </i>
+</div>
+<div class="w-full h-full px-10 pb-4 text-[color:var(--bg-color)]">
   <section>
     <ng-container *ngFor="let info of messageInfo">
       <p
@@ -34,7 +33,7 @@
       </div>
       <div class="pt-8 pb-6">
         <p class="text-base font-medium text-[color:var(--primary-text-color)]">
-          Email here:
+          Click to email:
         </p>
 
         <button class="text-lg italic">
@@ -43,16 +42,16 @@
             matTooltip="send email to mitchele.centeno@gmail.com"
             matTooltipPosition="above"
             matTooltipShowDelay="500"
-            class="flex items-center hover:text-[color:var(--link-text-color)]"
+            class="flex items-center hover:text-[color:var(--link-text-color)] group"
           >
-            <span class="flex items-center">
+            <p>
               {{ info.email }}
               <span
                 class="material-symbols-outlined text-sm pl-1 transition-transform translate-custom-hover"
               >
                 arrow_outward
               </span>
-            </span>
+            </p>
           </a>
         </button>
       </div>
