@@ -77,12 +77,12 @@ export const BIODATA_SKILLS_RIGHT = [
     altText: 'GitHub logo',
   },
   {
-    name: 'Adobe Photoshop',
+    name: 'Photoshop',
     imgSrc: '../../../assets/svg/adobe-photoshop.svg',
     altText: 'Adobe Photoshop logo',
   },
   {
-    name: 'Adobe Lightroom',
+    name: 'Lightroom',
     imgSrc: '../../../assets/svg/adobe-lightroom.svg',
     altText: 'Adobe Lightroom logo',
   },
