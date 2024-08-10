@@ -12,27 +12,33 @@
   <section>
     <ng-container *ngFor="let info of messageInfo">
       <p
-        class="text-lg font-semibold text-center text-[color:var(--fade-text-color)]"
+        class="text-base sm:text-lg font-semibold text-center text-[color:var(--fade-text-color)]"
       >
         CONTACT INFORMATION
       </p>
 
       <div class="pt-4">
-        <p class="text-base font-medium text-[color:var(--primary-text-color)]">
+        <p
+          class="text-sm sm:text-base font-medium text-[color:var(--primary-text-color)]"
+        >
           ADDRESS:
         </p>
-        <p>{{ info.address }}</p>
+        <p class="text-sm sm:text-base">{{ info.address }}</p>
       </div>
 
       <div class="pt-8">
-        <p class="text-base font-medium text-[color:var(--primary-text-color)]">
+        <p
+          class="text-sm sm:text-base font-medium text-[color:var(--primary-text-color)]"
+        >
           Mobile:
         </p>
-        <p>{{ info.mobileOne }}</p>
-        <p>{{ info.mobileTwo }}</p>
+        <p class="text-sm sm:text-base">{{ info.mobileOne }}</p>
+        <p class="text-sm sm:text-base">{{ info.mobileTwo }}</p>
       </div>
       <div class="pt-8 pb-2">
-        <p class="text-base font-medium text-[color:var(--primary-text-color)]">
+        <p
+          class="text-sm sm:text-base font-medium text-[color:var(--primary-text-color)]"
+        >
           Click to email:
         </p>
 
@@ -44,7 +50,7 @@
             matTooltipShowDelay="500"
             class="flex items-center hover:text-[color:var(--link-text-color)] group"
           >
-            <p class="flex flex-nowrap">
+            <p class="text-sm sm:text-base flex flex-nowrap">
               {{ info.email }}
               <span
                 class="material-symbols-outlined text-sm pl-1 transition-transform translate-custom-hover"
