@@ -13,7 +13,6 @@ export class ContactComponent {
   sendMessage() {
     this.dialog.open(SendMessageComponent, {
       disableClose: true,
-      // height: '80vh',
     });
   }
 }
