@@ -31,7 +31,8 @@ export const EXPERIENCE = [
     skills: ['JavaScript', 'MySQL', 'PL/SQL', 'Oracle'],
   },
   {
-    year: `2020 – 2022`,
+    yearStart: '2020',
+    yearEnd: '- 2022',
     job: `Front-end Web Developer & Graphic Designer`,
     location: `Upwork and Minimalist Designs | International`,
     desciption: `I specialize in front-end development and graphic design, working with international clients to create customized websites that meet their unique needs. I collaborate with creative teams to transform project briefs into visually compelling designs for digital and print. I produce original graphics like logos, illustrations, and infographics. Refine them based on feedback to ensure high-quality standards. Passionate about staying updated with industry trends, I deliver engaging visual solutions that resonate globally.`,
